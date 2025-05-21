@@ -1,28 +1,65 @@
-# Sistema de Folha de Pagamento
 
-Bem-vindo ao repositório do App Android Registro de Ponto desenvolvido no Flutter com Dart. 
+# 📲 Registro de Ponto - App Mobile
 
-Este App é parte integrante de um sistema de folha de pagamento arquitetado e desenvolvido por mim. Este sistema é composto por três aplicações distintas, concebido como parte da aplicação prática dos conhecimentos adquiridos durante meu percurso acadêmico. Ao longo de seis meses, empenhei-me no desenvolvimento desta solução robusta, buscando oferecer uma ferramenta eficiente e intuitiva para a administração de recursos humanos.
+Bem-vindo ao Registro de Ponto, um aplicativo mobile desenvolvido em Flutter que permite que funcionários registrem facilmente suas entradas, saídas e intervalos diretamente de seus dispositivos Android.
 
-## 1. Registro de Ponto (Android App)
+<p align="center">
+  <img src="imagens/registro_de_ponto_logo.png" alt="Logo Registro de Ponto" width="250"/>
+</p>
 
-O Registro de Ponto é uma aplicação móvel desenvolvida para dispositivos Android, permitindo que os funcionários realizem registros precisos de entrada, saída e intervalo para o almoço de maneira simples.
+---
 
-## 2. Portal do Funcionário
+## 🚀 Funcionalidades
 
-O Portal do Funcionário é um site dedicado, proporcionando aos funcionários a facilidade de acessar e revisar suas informações pessoais, incluindo detalhes sobre a folha de pagamento e registros de ponto.
-[[Link para o repositório](https://github.com/Luizsaw/RHS_Portal_Funcionario)](#)
+- ✅ Registro de ponto com apenas um toque
+- 🕒 Marcação de entrada, saída, pausa para almoço e retorno
+- 🔐 Autenticação segura com Firebase
+- 🎯 Interface intuitiva e responsiva
+  
+---
 
-## 3. Folha de Pagamento
+## 🖼️ Capturas de Tela
 
-A aplicação de Folha de Pagamento é o núcleo do sistema, responsável pelo processamento dos holerites dos funcionários e pela gestão abrangente das informações dos colaboradores.
-[[Link para o repositório](https://github.com/Luizsaw/RHS_Folha_de_Pagamento)](#)
+<p align="center">
+  <img src="imagens/imagem_demostracao_1.png" alt="Imagem de Demostração" width="400"/>
+  <img src="imagens/imagem_demostracao_2.png" alt="Imagem de Demostração" width="400"/>
+</p>
 
+---
 
-## Documentação
+## 🛠️ Tecnologias Utilizadas
 
-Para uma compreensão detalhada de todo o processo de desenvolvimento, recomendo consultar a documentação inclusa neste repositório. Ela fornecerá insights valiosos sobre a arquitetura, a implementação e as decisões de design que fundamentam este projeto.
+| Camada        | Tecnologias               |
+|---------------|---------------------------|
+| App Mobile    | Flutter, Dart             |
+| Backend/Auth  | Firebase Authentication   |
+| Build Tools   | Gradle, Android SDK       |
 
-Agradeço por explorar este repositório e espero que esta aplicação contribua positivamente para suas necessidades de gerenciamento de folha de pagamento.
+---
 
-[[Link para a Documentação](https://drive.google.com/file/d/14F7lBfh05t8UGVsVGT9HSLwE3RnL_FgR/view?usp=sharing)](#)
+## 📁 Estrutura de Pastas
+
+```
+lib/
+├── firebase_options.dart         # Configurações do Firebase
+├── folha_de_ponto.dart           # Página principal do app
+├── main.dart                     # Ponto de entrada da aplicação
+├── pages/                        # Páginas principais do app
+│   ├── login_page.dart
+│   ├── home_page.dart
+│   └── banco_bados.dart
+├── services/                     # Serviços de autenticação
+│   └── auth_service.dart
+├── widgets/                      # Componentes reutilizáveis
+    ├── auth_check.dart
+    ├── relogio.dart
+    └── usuario_logado.dart
+
+```
+---
+
+## 🤝 Contribuições
+
+Contribuições são sempre bem-vindas!  
+Sinta-se à vontade para abrir uma *issue*, *forkar* o repositório e enviar um *pull request*.
+
